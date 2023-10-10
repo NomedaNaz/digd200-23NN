@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Redacted Script';
+  src: url('../fonts/RedactedScript-Light.ttf') format('truetype');
+}
+/* just an example of how to load a local true-type font */
+.redacted {
+    font-family: 'Redacted Script', cursive;
+font-size:2rem;
+}
+body{
+--my-brand-color: green;
+}
+
+.myplaceholder {
+    height:33.33vh;
+    background:#eee;
+}
+.navbar-brand img{
+    height: 70px;
+}
+ .div-1 {
+        background-color: #F6F6F6;
+    }
+        footer {
+  text-align: center;
+        }
+
+.font-heading {
+font-family: 'Dosis', sans-serif;
+    letter-spacing: 0.2em;
+font-size: 20px;
+    font-weight: 400;
+    color: #111; 
+}
+.font-paragraph{
+    font-weight: 300;
+    color: #848884;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+h1, h2{
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 0.1em;
+font-size: 30px;
+    font-weight: 600; 
+}
+.my-paragraph-style{
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+
+.active {
+    
+}
