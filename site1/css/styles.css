@@ -48,9 +48,10 @@ font-size: 30px;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-}
-
-
-.active {
+    font-size: 1.1rem
     
+}
+p{
+    font-size: 1.1rem;
+     font-family: 'Open Sans', sans-serif;
 }
