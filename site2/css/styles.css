@@ -1,12 +1,12 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;600&family=MuseoModerno&family=Roboto:ital,wght@0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
 /* css custom properties */
 :root {   
  --my-brand-color: #6805F2;   
  --my-special-btn-color: #fff;
  --my-special-search-btn-background-color:#F205E2;   
     --my-accent-color-light: #07F2DB;
-    --my-accent-color-dark: royalblue;
+    --my-accent-color-dark: #0A04BF;
  /*--bs-dark-rgb: 25,135,84 !important; */
 
 }
@@ -14,13 +14,35 @@
 header {
 height: 56px;  
 }
-
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #2c002b;
+}
 .myplaceholder {
-    background: #0A04BF;
+   background: url(../Images/Arrows.svg) center/cover no-repeat, #0A04BF;
     margin: auto;
 }
 .my-light-navbar {
     background:#fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.navbar-brand img {
+    margin-right: 60px; 
+}
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--my-accent-color-light);
 }
 nav[data-bs-theme="dark"]{
   background:var(--my-brand-color); 
@@ -34,7 +56,7 @@ nav[data-bs-theme="dark"]{
 .btn-outline-success:hover{
    background:var(--my-special-btn-color);
  color: var(--my-special-search-btn-background-color);
-    color:var();
+    border-color: #0A04BF;
 }
 
 
@@ -61,7 +83,15 @@ a.active {
   border-bottom: 1px solid var(--my-brand-color) ;
 }
 h1 {
-    color:black;
+    color: #2c002b;
+    font-family: 'Kanit', sans-serif;
+    font-size: 4.2rem;
+    letter-spacing: 0.01em;
+    margin-bottom: 1.5rem;
+    
+}
+h2 {
+    color:#2c002b;
     font-family: 'Kanit', sans-serif;
     font-size: 4.2rem;
     letter-spacing: 0.01em;
@@ -72,20 +102,255 @@ h1 {
     font-size: 5rem;
     letter-spacing: 0.01em;
 }
-
+footer {
+    background-color: #0A04BF; 
+    color: #fff; 
+    padding: 40px 0;
+}
+footer p{
+    color:aliceblue;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+footer h3{
+    color:aliceblue;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
 footer i {
-	color:var(--my-brand-color);
+	color: aliceblue;
+    justify-content: center;
+    align-items: center;
 } 
 .firstsection {
     color: aliceblue;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
 }
 .maincontent {
     padding-top: 171px;
     padding-bottom: 260px;
-    max-width: 1200px;
 }
-.backgroundwithimage {
-    background-image: url(../Images/hacking4.png);
-    background-size: cover;
+.header {
+	padding-top: 8rem;
+	padding-bottom: 5rem;
+	text-align: center;
+}
+
+.header .h1-large {
+	margin-bottom: 1.25rem;
+}
+
+.header .p-large {
+	margin-bottom: 2.75rem;
+}
+
+.header .btn-solid-lg {
+	display: block;
+	margin-bottom: 1.75rem;
+}
+.basic-1 {
+	padding-top: 2.5rem;
+	padding-bottom: 5rem;
+}
+
+.basic-1 .image-container {
+	margin-bottom: 4rem;
+}
+
+.basic-1 h2 {
+	margin-bottom: 1.5rem;;
+}
+
+.basic-1 h2 span {
+	font-weight: 400;
+}
+
+.basic-1 p:last-of-type {
+	margin-bottom: 2rem;
+}
+
+.basic-1 .btn-solid-reg {
+	cursor: pointer;
+}
+ #carouselExample {
+    max-height: auto;
+}
+
+.carousel-inner img {
+    width: 100%; 
+    height: 600px; 
+    object-fit: cover; 
+}
+ @keyframes count-up {
+      from {
+        opacity: 0.4;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+.count-up {
+      animation: count-up 1s ease-out;
+    }
+ .newsletter-container {
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.newsletter-container label{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #2c002b;
+}
+.newsletter-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.btn-newsletter {
+    width: 50%; 
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+.signup-link {
+    text-align: center;
+    display: block;
+}
+
+
+ .program-card {
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.program-card:hover {
+            transform: scale(1.05);
+}
+.impact-stat {
+    color: #3E3240;
+}
+
+.impact-stat h3 {
+    font-size: 2.5rem;
+}
+
+.quote-section {
+    background-color: #6805F2;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.quote-section blockquote {
+    border-left: 5px solid #fff;
+}
+.program-card {
+    border: 1px solid #3E3240; /* Set your desired border color */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.vertical-line {
+    border-left: 2px solid #3E3240; /* Set your desired line color */
+    height: 100%;
+}
+.special-back {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    ),
+    url(../Images/hacking2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.values-section h2{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.value-items .icon{
+    color: #F205E2;
+    font-size: 36px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 100%;
+    border: solid 2px #F205E2;
+    margin: 0 auto 30px;
+    line-height: 98px;
+}
+
+.value-items h4{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    text-align: center;   
+}
+
+.value-items h4 a{
+    color: #2c002b;
+}
+
+.value-items h4 a:hover{
+    color: #F205E2;
+}
+
+.value-items p{
+    margin-bottom: 30px;
+     text-align: center
+}
+h5 {
+    color: #2c002b;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+.card-container {
+    width: 100%;
+    max-width: 300px;
+    height: 440px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-image img {
+    height: 220px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+.card-author img {
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  margin-top: auto;
 }
