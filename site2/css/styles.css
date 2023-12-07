@@ -52,6 +52,7 @@ nav[data-bs-theme="dark"]{
     color:var(--my-special-btn-color);
     background: var(--my-special-search-btn-background-color);
     border-color: var(--my-special-btn-color);
+     font-family: 'Kanit', sans-serif;
 }
 .btn-outline-success:hover{
    background:var(--my-special-btn-color);
@@ -65,6 +66,9 @@ nav[data-bs-theme="dark"]{
     background:var(--my-brand-color);
     border:var(--my-brand-color);
     color:ivory;
+    width: 140px; 
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
 }
 .btn-primary:hover, .btn-primary:first-child:active{
     background:var(--my-accent-color-light);
